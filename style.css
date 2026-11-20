@@ -18,7 +18,7 @@ body {
   position: relative;        /* anchor for + button */
   width: 100%;
   max-width: 360px;          /* the narrow strip */
-  height: 600px;
+  height: 550px;
   border-radius: 28px;
   overflow: hidden;
   display: flex;
@@ -273,31 +273,4 @@ body {
 
 
 
-/* Responsive design */
-* {
-    box-sizing: border-box;
-}
 
-.phone {
-    width: 100%;
-    max-width: 400px;
-    min-height: 100vh;
-    margin: 0 auto;
-}
-
-/* Smaller phones */
-@media (max-width: 360px) {
-    .phone {
-        width: 100%;
-        padding: 10px;
-    }
-}
-
-/* Tablets and larger screens */
-@media (min-width: 600px) {
-    .phone {
-        margin: 20px auto;
-        min-height: 90vh;
-        border-radius: 20px;
-    }
-}
