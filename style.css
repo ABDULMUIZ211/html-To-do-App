@@ -27,19 +27,6 @@ body {
   border: #666 1px solid;
 }
 
-
-.status-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 14px 8px;
-    box-sizing: border-box;
-    color: #1f2a44;
-    font-size: 14px;
-    font-weight: bold;
-}
-
 #clock {
     display: block;
     font-size: 14px;
@@ -50,17 +37,31 @@ body {
     margin-right: 220px;
 }
 
+.status-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 15px;
+    gap: 10px;
+}
+
 .status-icons {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    flex-direction: row;
-    gap: 7px;
+    gap: 8px;
     margin-left: auto;
-    padding: 0;
-    line-height: 1;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
+.status-icons svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
 
 
 .signal {
@@ -272,5 +273,15 @@ body {
 .hidden { display:none ; }
 
 
+@media (max-width: 380px) {
+    .status-bar {
+        padding-left: 12px;
+        padding-right: 12px;
+        gap: 6px;
+    }
 
+    .status-icons {
+        gap: 6px;
+    }
+}
 
