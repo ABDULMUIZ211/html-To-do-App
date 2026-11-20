@@ -12,21 +12,37 @@
       <div class="status-bar"> 
           <div class="status-icons">
              <span id="clock">12:00</span>
-          <span class="signal">
-           <i></i><i></i><i></i><i></i>
-           </span>
-            <svg class="wifi"  viewBox="0 0 16 12">
-         <path d="M0.93 3.93A10 10 0 0 1 15.07 3.93"/>
-         <path d="M3.4 6.4A6.5 6.5 0 0 1 12.6 6.4"/>
-         <path d="M5.88 8.88A3 3 0 0 1 10.12 8.88"/>
-         <circle cx="8" cy="11" r="1.2" fill="currentColor"
-          stroke="none"/>
-         </svg>
-         <span class="battery">
-         <span class="level"></span>
-          </span>
-           </div>
-           </div>
+            <div class="status-icons">
+
+    <!-- Signal -->
+    <div class="signal">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- WiFi -->
+    <svg class="wifi-icon" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor"
+         stroke-width="2.5" stroke-linecap="round">
+        <path d="M2 8.5C7.5 3.5 16.5 3.5 22 8.5"/>
+        <path d="M5.5 12C9 9 15 9 18.5 12"/>
+        <path d="M9 15.5C11 14 13 14 15 15.5"/>
+        <circle cx="12" cy="19" r="1" fill="currentColor"/>
+    </svg>
+
+    <!-- Battery -->
+    <svg class="battery-icon" viewBox="0 0 32 18"
+         fill="none" stroke="currentColor"
+         stroke-width="1.8">
+        <rect x="1" y="2" width="26" height="14" rx="3"/>
+        <rect x="28" y="6" width="3" height="6" rx="1" fill="currentColor"/>
+        <rect x="4" y="5" width="19" height="8" rx="1"
+              fill="currentColor" stroke="none"/>
+    </svg>
+
+</div>
 
 
   <header class="top">
