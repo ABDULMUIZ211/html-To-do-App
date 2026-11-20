@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="phone">
+
+      <div class="status-bar"> 
+          <div class="status-icons">
+             <span id="clock">12:00</span>
+          <span class="signal">
+           <i></i><i></i><i></i><i></i>
+           </span>
+            <svg class="wifi"  viewBox="0 0 16 12">
+         <path d="M0.93 3.93A10 10 0 0 1 15.07 3.93"/>
+         <path d="M3.4 6.4A6.5 6.5 0 0 1 12.6 6.4"/>
+         <path d="M5.88 8.88A3 3 0 0 1 10.12 8.88"/>
+         <circle cx="8" cy="11" r="1.2" fill="currentColor"
+          stroke="none"/>
+         </svg>
+         <span class="battery">
+         <span class="level"></span>
+          </span>
+           </div>
+           </div>
+
+
+  <header class="top">
+      <h1>My Tasks</h1>
+      <button id="refreshBtn">&#8635;</button>
+  </header>
+
+  <div class="search">
+    <input id="searchInput" placeholder="Search your tasks">
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <p id="emptyMsg" class="hidden">Nothing yet.</p>
+
+  <button id="newBtn" class="fab">+ New Task</button>
+
+  <div id="modal" class="modal hidden">
+
+    <div class="sheet">
+        <h2 id="modalTitle">New Task</h2>
+
+        <input id="titleInput" placeholder="Task title">
+
+       <textarea id="noteInput"></textarea>
+
+        <button id="cancelBtn">Cancel</button>
+
+        <button id="saveBtn">Save</button>
+    </div>
+
+  </div>
+</main>
+
+
+</body>
+<script src="script.js"></script>
+</html>
