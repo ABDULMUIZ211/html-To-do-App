@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4CAF50">
 </head>
 <body>
     <main class="phone">
 
-  <div class="status-bar"> 
+      <div class="status-bar"> 
          <div class="status-icons">
         <span id="clock">12:00</span>
 
@@ -42,8 +44,7 @@
 </div>
   </div>
 
-        
-    
+
   <header class="top">
       <h1>My Tasks</h1>
       <button id="refreshBtn">&#8635;</button>
@@ -76,7 +77,13 @@
   </div>
 </main>
 
-
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/service-worker.js");
+  });
+}
+</script>
 </body>
 <script src="script.js"></script>
 </html>
