@@ -16,7 +16,7 @@ body {
 .phone {
   background:#f2f6e3 ;
   position: relative;        /* anchor for + button */
-  width: 100%;
+  width: 80%;
   max-width: 360px;          /* the narrow strip */
   height: 550px;
   border-radius: 28px;
